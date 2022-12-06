@@ -87,9 +87,9 @@ export default function CreatePost({
         onChange={onChangeFile}
       />
       { formState.file && <img className={imageStyle} alt="preview" src={formState.file} /> }
-      <Button title="Create New Post" onClick={save} />
+      <Button title="Create New Template" onClick={save} />
       <Button type="cancel" title="Cancel" onClick={() => updateOverlayVisibility(false)} />
-      { formState.saving && <p className={savingMessageStyle}>Saving post...</p> }
+      { formState.saving && <p className={savingMessageStyle}>Saving template...</p> }
       { formState.error && <p className={errorMessageStyle}>Error saving, please enter name, description and image.</p> }
     </div>
   )
